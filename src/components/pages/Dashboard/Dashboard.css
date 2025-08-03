@@ -1,0 +1,41 @@
+
+
+.paddingall{
+    padding: 10px 10px 10px 10px;
+
+}
+.pricetitle{
+font-weight: 600;
+}
+.pricesubtitle{
+    font-size: 14px;
+}
+.iconstyle{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: orange;
+    color: aliceblue;
+}
+.gradient {
+   /* background: rgb(40, 34, 70); */
+    /* background: linear-gradient(158deg, rgba(40, 34, 70, 1) 0%, rgba(30, 47, 141, 1) 100%); */
+
+
+}
+/* Base style for the card */
+.hover-card {
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Smooth transitions */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Initial shadow */
+    border-radius: 8px; /* Slightly rounded corners */
+  }
+  
+  /* Hover effect */
+  .hover-card:hover {
+    transform: scale(1.02); /* Slight zoom */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+
+ 

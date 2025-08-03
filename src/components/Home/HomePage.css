@@ -1,0 +1,239 @@
+/* Login form container */
+.login-form {
+  width: 100%; /* Adjusted width to maintain responsiveness */
+  /* max-width: 600px;    */
+  max-width: 572px; 
+  height: auto; /* Allow dynamic height */
+  min-height: auto; /* Set a minimum height */
+  padding: 40px; /* Increased padding for better spacing */
+  /* background: rgba(255, 255, 255, 0.728); */
+  /* background: rgba(255, 255, 255, 0.938); */
+  background: rgba(255, 253, 253, .95);
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 2;
+  margin: 0 auto;
+  /* height: 505px; */
+  height: 479px;
+
+  margin-bottom: 20%;
+}
+
+.forgetpassword-form {
+  width: 100%; /* Adjusted width to maintain responsiveness */
+  max-width: 600px; /* Increased max-width */
+  height: auto; /* Allow dynamic height */
+  min-height: auto; /* Set a minimum height */
+  padding: 40px; /* Increased padding for better spacing */
+  /* background: rgba(255, 255, 255, 0.728); */
+  background: rgba(255, 255, 255, 0.928);
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.forgetpassword-form-button {
+  width: 50%;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #2d4ef5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem; /* Larger font for button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.login-form h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-left: 102px;
+  margin-right: 126px;
+  color: #333;
+  white-space: nowrap;
+  text-align: center;
+}
+.form-input {
+  width: 100%;
+  /* padding: 15px;  */
+  padding: 5px;
+  margin: 10px 0;
+  font-size: 1.2rem; /* Larger font size */
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  
+}
+
+.form-button {
+  width: 30%;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #2d4ef5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px; /* Larger font for button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.styled-link {
+  color: #2d4ef5;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* .form-button:hover {
+  background-color: #1237b3d3;
+} */
+.spinner {
+  width: 14px;  /* Smaller spinner */
+  height: 14px;
+  border: 2px solid white;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.login-form p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.login-form span {
+  color: #1a73e8;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.forget-password-link {
+  color: #666;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.forget-password-link:hover {
+  color: #1a73e8;
+  text-decoration: underline;
+}
+
+/* Link styling */
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video covers the div fully */
+  z-index: 1;
+  pointer-events: none; /* Makes sure the video doesn't interfere with interaction */
+}
+
+/* Content styling to appear above the video */
+.content {
+  position: relative;
+  z-index: 2; /* Ensures content is above the video */
+}
+.otp-input {
+  text-align: center;
+  font-size: 16px;
+  width: 36px;
+  height: 36px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+@media (max-width: 480px) {
+  .otp-input {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .otp-input {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+}
+
+
+/* For screens between 530px and 481px */
+@media (max-width: 547px) and (min-width: 481px) {
+  .login-form {
+    width: 100%; /* Adjust width for this screen range */
+    padding: 30px; /* Reduce padding */
+    min-height: 350px; /* Adjust min-height */
+  }
+
+  .login-form h2 {
+    font-size: 1.7rem; /* Adjust font size */
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .form-input, .form-button {
+    padding: 12px; /* Adjust padding */
+    font-size: 1rem; /* Adjust font size */
+  }
+}
+
+
+
+
+/* For small screens (480px and below) */
+@media (max-width: 480px) {
+  .login-form {
+    width: 100%; /* Full width on mobile */
+    padding: 20px; /* Smaller padding */
+    min-height: 300px; /* Adjust min-height */
+    border-radius: 8px; /* Smaller border radius */
+  }
+
+  .login-form h2 {
+    font-size: 1.6rem; /* Smaller font size */
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .form-input, .form-button {
+    padding: 10px; /* Smaller padding */
+    font-size: 0.9rem; /* Smaller font size */
+  }
+}
+
+/* For very small screens (320px and below) */
+@media (max-width: 320px) {
+  .login-form {
+    width: 100%; /* Ensure full width */
+    padding: 15px; /* Smaller padding */
+    min-height: 250px; /* Reduce min-height */
+  }
+
+  .login-form h2 {
+    font-size: 1.4rem; /* Even smaller font size */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .form-input, .form-button {
+    padding: 8px; /* Reduce padding */
+    font-size: 0.8rem; /* Even smaller font size */
+  }
+}
+
+

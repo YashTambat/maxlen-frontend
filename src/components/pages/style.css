@@ -1,0 +1,47 @@
+/* General card styling */
+.pibo-card-content {
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+    padding: 16px; /* Default padding for larger screens */
+    box-sizing: border-box; /* Include padding in the element's width */
+    margin: 0 auto; /* Center the card horizontally */
+    overflow: hidden; /* Prevent any horizontal overflow */
+  }
+  
+  /* Typography styling */
+  .pibo-typography {
+    font-size: 2rem; /* Default font size for larger screens */
+    text-align: center; /* Center-align the text */
+    word-wrap: break-word; /* Ensure long words wrap within the container */
+  }
+
+
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .pibo-card-content {
+      padding: 12px; /* Reduce padding for smaller screens */
+    }
+  
+    .pibo-typography {
+      font-size: 1.5rem; /* Adjust font size for better fit */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .pibo-card-content {
+      padding: 8px; /* Further reduce padding for very small screens */
+    }
+  
+    .pibo-typography {
+      font-size: 1.2rem; /* Further scale down font size */
+    }
+  }
+
+
+
+  
+
+
+
+  
+  
