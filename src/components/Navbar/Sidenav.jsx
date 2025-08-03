@@ -215,17 +215,17 @@ export default function Sidenav() {
           </ListItem>
           
           <Divider sx={{ backgroundColor: "white" }} />
-          {/* <Box height={5} /> */}
+          {/* <Box height={5}  /> */}
           {(role !== "client" &&
             <ListItem disablePadding sx={{ display: 'block',marginTop:"-9px" }} onClick={() =>  handleNavigation("/all-user") }>
-              <DraweToolTips title={!open ? "Pibo" : ""} placement="right" arrow>
+              <DraweToolTips title={!open ? "All User" : ""} placement="right" arrow>
               <ListItemButton
                 sx={[
                   {
                     minHeight: 56,
                     px: 2.5,
-                    backgroundColor: location.pathname === '/pibo' ? 'white' : '', // Highlight active route
-                    color: location.pathname === '/pibo' ? 'white' : 'white', // Adjust text color
+                    backgroundColor: location.pathname === '/all-user' ? 'white' : '', // Highlight active route
+                    color: location.pathname === '/all-user' ? 'white' : 'white', // Adjust text color
                     '&:hover': {
                       backgroundColor: 'white', // Hover effect
                       color: '#2d4ef5',
@@ -256,14 +256,14 @@ export default function Sidenav() {
                   ]}
                 >
                   <EmojiPeopleTwoToneIcon sx={{
-                     color:location.pathname==="/pibo" ? "#2d4ef5":"white",
-                     backgroundColor:location.pathname==="/pibo" ? "white":"#2d4ef5"
+                     color:location.pathname==="/all-user" ? "#2d4ef5":"white",
+                     backgroundColor:location.pathname==="/all-user" ? "white":"#2d4ef5"
                    
                      
                      }} />
                 </ListItemIcon>
                 <ListItemText
-                  primary="Pibo"
+                  primary="all-user"
                   sx={[
                     open
                       ? {
@@ -347,15 +347,15 @@ export default function Sidenav() {
           <Divider sx={{ backgroundColor: "white" }} />
           {/* <Box height={5} /> */}
           {(role === "client" &&
-          <ListItem disablePadding sx={{ display: 'block',marginTop:"-5px" }} onClick={() =>  handleNavigation("/product-details") }>
-          <DraweToolTips title={!open ? "Product Details" : ""} placement="right" arrow>
+          <ListItem disablePadding sx={{ display: 'block',marginTop:"-5px" }} onClick={() =>  handleNavigation("/user-details") }>
+          <DraweToolTips title={!open ? "user-details" : ""} placement="right" arrow>
             <ListItemButton
               sx={[
                 {
                   minHeight: 56,
                   px: 2.5,
-                  backgroundColor: location.pathname === '/product-details' ? 'white' : '', // Highlight active route
-                  color: location.pathname === '/product-details' ? 'white' : 'white', // Adjust text color
+                  backgroundColor: location.pathname === '/user-details' ? 'white' : '', // Highlight active route
+                  color: location.pathname === '/user-details' ? 'white' : 'white', // Adjust text color
                   '&:hover': {
                     backgroundColor: 'white', // Hover effect
                     color: 'black',
@@ -386,17 +386,17 @@ export default function Sidenav() {
                 ]}
               >
                 <InboxIcon sx={{
-                   color:location.pathname==="/product-details" ? "#2d4ef5":"white",
-                   backgroundColor:location.pathname==="/product-details" ?"white":"#2d4ef5"
+                   color:location.pathname==="/user-details" ? "#2d4ef5":"white",
+                   backgroundColor:location.pathname==="/user-details" ?"white":"#2d4ef5"
                    
                    }} />
               </ListItemIcon>
               <ListItemText
-                primary="Product Details"
+                primary="user-details"
                 sx={[
                   open
                     ? {
-                      color:location.pathname==="/product-details" ? "#2d4ef5":"black",
+                      color:location.pathname==="/user-details" ? "#2d4ef5":"black",
                       opacity: 1,
                     }
                     : {

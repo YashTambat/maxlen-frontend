@@ -78,7 +78,7 @@ function App() {
         {isLoggedIn && roleName==="admin"&&(
           <>
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/product-details" element={<ModelGeneration />} />
+            <Route path="/user-details" element={<ModelGeneration />} />
             <Route exact path="/all-user" element={<Pibo />} />
             <Route path="/setproductdeposit" element={<ProductDeposit />} />
           </>
@@ -87,7 +87,7 @@ function App() {
         {isLoggedIn && roleName === "client" && (
           <>
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/product-details" element={<ModelGeneration />} />
+            <Route path="/user-details" element={<ModelGeneration />} />
             <Route exact path="/generateQRcode" element={<GenerateQRcode />} />
             <Route
               path="/generateQRcode/payment-success"
